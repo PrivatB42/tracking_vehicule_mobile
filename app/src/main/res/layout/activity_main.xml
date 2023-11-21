@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="234dp"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:fontFamily="sans-serif-black"
+        android:text="MENU PRINCIPAL"
+        android:textAlignment="center"
+        android:textSize="70px" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_above="@+id/sendcoord"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:layout_toEndOf="@+id/imageButton"
+        android:backgroundTint="@color/colorPrimary"
+        app:layout_constraintVertical_bias="0.595"
+        app:srcCompat="@drawable/baseline_settings_24"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="127dp"
+        android:layout_height="27dp"
+        android:layout_above="@+id/imageButton2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="100dp"
+        android:layout_toEndOf="@+id/textView"
+        android:text="infoname"
+        android:textSize="50px"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/imatriculation" />
+
+    <TextView
+        android:id="@+id/imatriculation"
+        android:layout_width="152dp"
+        android:layout_height="29dp"
+        android:layout_above="@+id/imageButton2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="40dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:text="imatvehicule"
+        android:textSize="50px"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Name :"
+        android:textSize="50px"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginBottom="45dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Vehicule No :"
+        android:textSize="50px"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintEnd_toStartOf="@+id/imatriculation"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_above="@+id/sendcoord"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/colorPrimary"
+        app:layout_constraintVertical_bias="0.631"
+        app:srcCompat="@drawable/baseline_local_gas_station_24" />
+
+    <Button
+        android:id="@+id/sendcoord"
+        android:layout_width="200dp"
+        android:layout_height="74dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="181dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="envoi coordonnees"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
